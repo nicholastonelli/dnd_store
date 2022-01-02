@@ -1,0 +1,25 @@
+{
+  "name": "dnd_store",
+  "version": "1.0.0",
+  "description": "An express app for dnd items",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholastonelli/dnd_store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicholastonelli/dnd_store/issues"
+  },
+  "homepage": "https://github.com/nicholastonelli/dnd_store#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1"
+  }
+}
