@@ -1,0 +1,26 @@
+[
+  {
+    "name": "+1 Longsword",
+    "rarity": 1,
+    "image": "+1longsword.png",
+    "price": 1020,
+    "quantity": 1,
+    "description": "This bright blade shimmers with pale lit runes."
+  },
+  {
+    "name": "Potion of Healing",
+    "rarity": 0,
+    "image": "potionOfHealing.png",
+    "price": 50,
+    "quantity": 4,
+    "description": "A faint swirl of red light emanates from this round bottle."
+  },
+  {
+    "name": "Potion of Greater Healing",
+    "rarity": 1,
+    "image": "potionOfGreaterHealing.png",
+    "price": 100,
+    "quantity": 3,
+    "description": "A bright glow of red light emanates from this round bottle."
+  }
+]
