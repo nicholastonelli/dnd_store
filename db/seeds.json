@@ -1,26 +1,66 @@
 [
   {
-    "name": "+1 Longsword",
-    "rarity": 1,
-    "image": "+1longsword.png",
-    "price": 1020,
-    "quantity": 1,
-    "description": "This bright blade shimmers with pale lit runes."
-  },
-  {
     "name": "Potion of Healing",
     "rarity": 0,
     "image": "potionOfHealing.png",
-    "price": 50,
-    "quantity": 4,
-    "description": "A faint swirl of red light emanates from this round bottle."
+    "description": "This potion’s red liquid glimmers when agitated.",
+    "rules": "You regain 2d4+2 Hit Points when you drink this potion.",
+    "type": "adventuring gear",
+    "subtype": "potion",
+    "source": "PHB187"
   },
   {
     "name": "Potion of Greater Healing",
     "rarity": 1,
     "image": "potionOfGreaterHealing.png",
-    "price": 100,
-    "quantity": 3,
-    "description": "A bright glow of red light emanates from this round bottle."
+    "description": "This potion’s red liquid glimmers when agitated.",
+    "rules": "You regain 4d4+4 Hit Points when you drink this potion.",
+    "type": "adventuring gear",
+    "subtype": "potion",
+    "source": "PHB187"
+  },
+  {
+    "name": "Potion of Superior Healing",
+    "rarity": 2,
+    "image": "potionOfSuperiorHealing.png",
+    "description": "This potion’s red liquid glimmers when agitated.",
+    "rules": "You regain 8d4+8 Hit Points when you drink this potion.",
+    "type": "adventuring gear",
+    "subtype": "potion",
+    "source": "PHB187"
+  },
+  {
+    "name": "Potion of Supreme Healing",
+    "rarity": 3,
+    "image": "potionOfSupremeHealing.png",
+    "description": "This potion’s red liquid glimmers when agitated.",
+    "rules": "You regain 10d4+10 Hit Points when you drink this potion.",
+    "type": "adventuring gear",
+    "subtype": "potion",
+    "source": "PHB187"
+  },
+  {
+    "name": "Amulet of the Planes",
+    "rarity": 3,
+    "image": "amuletoftheplanes.png",
+    "description": "Amulets of the planes were typically circular necklace pendants, fashioned from gray metal and black stone and inscribed with various symbols. On closer inspection, they resembled a swirling mass of dark color, and gave off a strong conjuration aura.",
+    "rules": "While wearing this Amulet, you can use an action to name a Location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the Plane Shift spell. On a failure, you and each creature and object within 15 feet of you Travel to a random destination. Roll a d100. On a 1-60, you Travel to a random Location on the plane you named. On a 61-100, you Travel to a randomly determined plane of existence.",
+    "attunement": true,
+    "type": "adventuring gear",
+    "subtype": "wondrous item",
+    "slot": "neck",
+    "source": "PHB150"
+  },
+  {
+    "name": "Adamantine Armor",
+    "rarity": 1,
+    "image": "adamantinearmor.png",
+    "description": "This suit of armor is reinforced with adamantine, one of the hardest substances in existance.",
+    "rules": "While wearing this armor, any critical hit against you becomes a normal hit.",
+    "attunement": false,
+    "type": "armor",
+    "subtype": "medium or heavy, but not hide",
+    "slot": "armor",
+    "source": "PHB150"
   }
 ]
