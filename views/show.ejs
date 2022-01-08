@@ -1,8 +1,12 @@
-<%= item.name %> and the its rarity is
-    <%= item.rarity %>. 
+<h1><%= item.name %> and the its rarity is
+    <%= item.rarity %>. </h1>
 
     <p><%= item.description %></p>
 
+    <p> <%= item.rules %></p>
+
     <p><%= item.setting %></p>
+
+    <img src="/images/<%= item.image %>" alt=" <%= item.description %>">
 
     <a href="/items">Back</a>

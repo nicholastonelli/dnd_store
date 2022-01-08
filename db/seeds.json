@@ -62,5 +62,17 @@
     "subtype": "medium or heavy, but not hide",
     "slot": "armor",
     "source": "PHB150"
+  },
+  {
+    "name": "Demon Armor",
+    "rarity": 3,
+    "image": "demonarmor.png",
+    "description": "This suit of armor is spiked, studded, and covered in blades, an itimidating sight.",
+    "rules": "While wearing this armor, you gain a +1 bonus to AC, and you can understand and speak Abyssal. In addition, the armor's clawed gauntlets turn unarmed strikes with your hands into magic weapons that deal slashing damage, with a +1 bonus to attack rolls and damage rolls and a damage die of 1d8. Curse: Once you don this cursed armor, you can't doff it unless you are targeted by the remove curse spell or similar magic. While wearing the armor, you have disadvantage on attack rolls against demons and on saving throws against their spells and special abilities.",
+    "attunement": true,
+    "type": "armor",
+    "subtype": "plate",
+    "slot": "armor",
+    "source": "PHB165"
   }
 ]

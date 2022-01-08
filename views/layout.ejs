@@ -4,11 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
     <title>Item Shop</title>
   </head>
-<%- body %>
-   
+
+ 
+    <nav>
+      <ul>
+        <li><a href="/items">Items Index</a></li>
+        <li><a href="/items/new">Create New Item</a></li>
+        <% if (!loggedIn) {%>
+        <li><a href="/session/register">Register</a></li>
+        <li><a href="/session/login">Login</a></li>
+        <% } else { %>
+        <li><a href="/session/logout">Logout</a></li>
+        <%}%>
+      </ul>
+    </nav>
+    <% if (username) { %>
+    <p>Welcome <%=username %></p>
+    <%}%> <% if (message) {%>
+    <p><%= message %></p>
+    <% } %> <%- body %>
+    <p>Footer copywrite 2022</p>
   </body>
 </html>
