@@ -1,0 +1,34 @@
+<h1>This is a Shop</h1>
+
+<img src="/images/storefront.png" alt="A picture of a fantasy storefront">
+
+<table>
+    <% items.forEach((item, index)=>{ %>
+    <!-- <% let maxQuantity = item.quantity %> -->
+    <tr>
+      <td><b><%= item.name %></b></td>
+      <td>
+        <a href="/items/<%= item.id %>" target="_blank">
+          <% { %> <% if (item.image){ %>
+          <img
+            src="/images/<%= item.image %>"
+            alt="Image of <%= item.name %>"
+            style="max-width: 150px"
+          />
+          <% } else { %>
+          <img
+            src="/images/itemBox.png"
+            alt="Image of <%= item.name %>"
+            style="max-width: 150px"
+          />
+          <% } %> <% } %>
+        </a>
+      </td>
+      <td><%= rarityChart[item.rarity] %></td>
+      <td><%= priceChart[item.rarity][0]%> - <%=priceChart[item.rarity][1] %> gp</td>
+      <td><i><%= item.description %></i></td>
+      <td><%= item.rules %></td>
+      <td><i><%= item.type %> (<%= item.subtype%>)</i></td>
+    </tr>
+    <% }) %>
+  </table>
