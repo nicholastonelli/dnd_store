@@ -13,6 +13,12 @@ router.get("/new", (req, res) => {
   res.render("new")
 })
 
+// Outfit
+
+router.get('/outfit', (req, res) => {
+  res.render('outfit', { Items: Items})
+})
+
 //New Item
 
 router.post("/", (req, res) => {
@@ -60,6 +66,9 @@ router.get("/:id/edit", (req, res) => {
       })
     })
   })
+
+
+
 
 
 // Delete Item

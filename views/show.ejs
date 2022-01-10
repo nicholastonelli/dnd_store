@@ -1,12 +1,12 @@
-<h1><%= item.name %> and the its rarity is
-    <%= item.rarity %>. </h1>
+<p><%= item.name %></p>
+<p><%= item.rarity %></p>
+<img src="/images/<%= item.image %>" alt=" <%= item.description %>" />
+<p><%= item.description %></p>
+<p>Requires Attunement: <%= item.attunement %></p>
+<p><%= item.type %> (<i><%= item.subtype%></i>)</p>
+<p><%= item.rules %></p>
+<p><%= item.slot %></p>
+<p><%= item.source %></p>
+<p><%= item.setting %></p>
 
-    <p><%= item.description %></p>
-
-    <p> <%= item.rules %></p>
-
-    <p><%= item.setting %></p>
-
-    <img src="/images/<%= item.image %>" alt=" <%= item.description %>">
-
-    <a href="/items">Back</a>
+<a href="/items">Back</a>
