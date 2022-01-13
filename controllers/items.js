@@ -34,7 +34,7 @@ const priceChart = [
 
 router.get("/", (req, res) => {
   Items.find({}, (err, items) => {
-    res.render("index", { items })
+    res.render("index", { items, rarityChart, priceChart })
   })
 })
 
@@ -45,7 +45,15 @@ router.get("/new", (req, res) => {
 // Outfit
 
 router.get("/outfit", (req, res) => {
-  res.render("outfit", { Items: Items })
+  res.render("outfit", { Items })
+})
+
+// Shop Form: This page has two select elements, one to get limit and rarity, one to get type 
+
+
+router.post("/findshop/shop", (req, res) => {
+  let locale = (req.body.location)
+  console.log(locale)
 })
 
 router.get("/findshop", (req, res) => {
@@ -54,11 +62,13 @@ router.get("/findshop", (req, res) => {
 
 // Shop
 
-router.get("/shop", (req, res) => {
-  Items.find({}, {}, {  }, (err, items) => {
+
+router.get("/findshop/shop", (req, res,) => {
+  Items.find({ }, { }, { limit: req.body.location }, (err, items) => {
     res.render("shop", { items, rarityChart, priceChart })
   })
 })
+
 
 //New Item
 
@@ -78,7 +88,7 @@ router.post("/", authRequired, (req, res) => {
 
 router.get("/:id", (req, res) => {
   Items.findById(req.params.id, (err, item) => {
-    res.render("show", { item })
+    res.render("show", { item, rarityChart })
   })
 })
 

@@ -42,7 +42,8 @@
     <% } %>
     <td><i><%= item.description %></i></td>
     <td><%= item.rules %></td>
-    <td><i><%= item.type %> (<%= item.subtype%>)</i></td>
+    <td><i><%= item.type %> <% if (item.subtype) {%>(<%= item.subtype%>)<% } %></i></td>
   </tr>
   <% }) %>
 </table>
+<a href="/items/findshop">Make a new Shop.</a>

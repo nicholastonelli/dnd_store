@@ -7,7 +7,7 @@
     "rules": "You can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as an action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named. Once the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn.",
     "subrules": "Acid: 8 ounces, Basic Poison, 1/2 ounce, Beer: 4 gallons, Honey: 1 gallon, Mayonnaise: 2 gallons, Oil: 1 quart, Vinegar: 2 gallons, Water, Fresh: 8 gallons, Water, Salt: 12 gallons, Wine: 1 gallon.",
     "type": "Wondrous item",
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Ammunition, +1",
@@ -18,7 +18,7 @@
     "type": "Weapon",
     "consumable": true,
     "subtype": "Any ammunition",
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Ammunition, +2",
@@ -29,7 +29,7 @@
     "type": "Weapon",
     "subtype": "Any ammunition",
     "consumable": true,
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Ammunition, +3",
@@ -40,7 +40,7 @@
     "type": "Weapon",
     "subtype": "Any ammunition",
     "consumable": true,
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Amulet of Health",
@@ -49,10 +49,9 @@
     "description": "This small golden amulet is enscribed with a simple sigil, and feels warm to the touch.",
     "rules": "Your Constitution score is 19 while you wear this Amulet. It has no Effect on you if your Constitution score is already 19 or higher.",
     "attunement": true,
-    "type": "Adventuring gear",
-    "subtype": "Wondrous item",
+    "type": "Wondrous item",
     "slot": "neck",
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Amulet of Proof Against Detection and Location",
@@ -61,10 +60,9 @@
     "description": "This small silver amulet is inset with amber, marked with the symbol of a closed eye.",
     "rules": "While wearing this Amulet, you are hidden from Divination magic. You can't be targeted by such magic or perceived through magical Scrying Sensors.",
     "attunement": true,
-    "type": "Adventuring gear",
-    "subtype": "Wondrous item",
+    "type": "Wondrous item",
     "slot": "neck",
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Animated Shield",
@@ -76,7 +74,7 @@
     "type": "shield",
     "subtype": "shield",
     "slot": "shield",
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Apparatus of Kwalish",
@@ -86,7 +84,7 @@
     "rules": "This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end. each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.",
     "subrules": "The apparatus of Kwalish is a Large object with the following statistics...",
     "type": "Wondrous item",
-    "source": "PHB151"
+    "source": "DMG151"
   },
   {
     "name": "Armor of Invulnerability",
@@ -97,7 +95,7 @@
     "type": "Armor",
     "subtype": "plate",
     "attunement": true,
-    "source": "PHB153"
+    "source": "DMG153"
   },
   {
     "name": "Armor of Resistance",
@@ -109,7 +107,7 @@
     "type": "Armor",
     "subtype": "light, medium, or heavy",
     "attunement": true,
-    "source": "PHB153"
+    "source": "DMG153"
   },
   {
     "name": "Armor of Vulnerability",
@@ -121,7 +119,7 @@
     "type": "Armor",
     "subtype": "plate",
     "attunement": true,
-    "source": "PHB152"
+    "source": "DMG152"
   },
   {
     "name": "Arrow Catching Shield",
@@ -133,7 +131,7 @@
     "type": "Armor",
     "subtype": "shield",
     "attunement": true,
-    "source": "PHB152"
+    "source": "DMG152"
   },
   {
     "name": "Arrow of Slaying",
@@ -146,7 +144,7 @@
     "subtype": "ammunition",
     "attunement": false,
     "consumable": true,
-    "source": "PHB152"
+    "source": "DMG152"
   },
   {
     "name": "Bag of Beans",
@@ -157,7 +155,7 @@
     "subrules": "d100 — Effect: 01 — 5d4 toadstools sprout. If a creature eats a toadstool, roll any die. On an odd roll, the eater must succeed on a DC 15 Constitution saving throw or take Sd6 poison damage and become Poisoned for 1 hour. On an even roll, the eater gains 5d6 temporary Hit Points for 1 hour.   2-10 — A geyser erupts and spouts water, beer, berry juice, tea, vinegar, wine, or oil (DM's choice) 30 feet into the air for 1d12 rounds.  11-20 — A Treant sprouts (see the Monster Manual for statistics). There's a 50 percent chance that the Treant is chaotic evil and attacks.    21-30 — An animate, immobile stone statue in your likeness rises. It makes verbal threats against you. If you leave it and others come near, it describes you as the most heinous of Villains and directs the newcomers to find and Attack you. If you are on the same plane of existence as the statue, it knows where you are. The statue becomes inanimate after 24 hours. 31-40 — A campfire with blue flames springs forth and burns for 24 hours (or until it is extinguished). 41-50 — 1d6 + 6 shriekers sprout (see the Monster Manual for statistics).  51-60 — 1d4 + 8 bright pink toads crawl forth. Whenever a toad is Touched, it transforms into a Large or smaller monster of the DM's choice. The monster remains for 1 minute, then disappears in a puff of bright pink smoke. 61-70 — A hungry Bulette (see the Monster Manual for statistics) burrows up and attacks.    71-80 A fruit tree grows. It has 1d10+20 fruit, 1d8 of which act as randomly determined magic Potions, while one acts as an ingested poison of the DM's choice. The tree vanishes after 1 hour. Picked fruit remains, retaining any magic for 30 days.    81-90 — A nest of 1d4 + 3 eggs springs up. Any creature that eats an egg must make a DC 20 Constitution saving throw. On a successful save, a creature permanently increases its lowest ability score by 1, randomly choosing among equally low scores. On a failed save, the creature takes 10d6 force damage from an internal magical explosion. 91-99 — A pyramid with a 60-foot-square base bursts upward. Inside is a sarcophagus containing a Mummy Lord (see the Monster Manual for statistics). The pyramid is treated as the mummy lord's lair, and its sarcophagus contains Treasure of the DM's choice. 00 — A giant beanstalk sprouts, growing to a height of the DM's choice. The top leads where the DM chooses, such as to a great view, a cloud giant's castle, or a different plane of existence.",
     "type": "Wondrous item",
     "attunement": false,
-    "source": "PHB152"
+    "source": "DMG152"
   },
   {
     "name": "Bag of Devouring",
@@ -167,7 +165,7 @@
     "rules": "The extradimensional creature attached to the bag can sense whatever is placed inside the bag. Animal or vegetable matter placed wholly in the bag is devoured and lost forever. When part of a living creature is placed in the bag, as happens when someone reaches inside it, there is a 50 percent chance that the creature is pulled inside the bag. A creature inside the bag can use its action to try to escape with a successful DC 15 Strength check. Another creature can use its action to reach into the bag to pull a creature out, doing so with a successful DC 20 Strength check (provided it isn't pulled inside the bag first). Any creature that starts its turn inside the bag is devoured, its body destroyed.",
     "subrules":"Inanimate objects can be stored in the bag, which can hold a cubic foot of such material. However, once each day, the bag swallows any objects inside it and spits them out into another plane of existence. The GM determines the time and plane. If the bag is pierced or torn, it is destroyed, and anything contained within it is transported to a random location on the Astral Plane.",
     "type": "Wondrous Item",
-    "source": "PHB153"
+    "source": "DMG153"
   },
   {
     "name": "Bag of Holding",
@@ -177,7 +175,7 @@
     "rules": "If the bag is overloaded, pierced, or torn, it ruptures and is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth, unharmed, but the bag must be put right before it can be used again. Breathing creatures inside the bag can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin to suffocate.",
     "subrules":"Placing a bag of holding inside an extradimensional space created by a handy haversack, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way only and can’t be reopened.",
     "type": "Wondrous Item",
-    "source": "PHB153"
+    "source": "DMG153"
   },
   {
     "name": "Bag of Tricks, Grey",
@@ -186,9 +184,8 @@
     "description": "This ordinary bag, made from gray cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.",
     "rules": "You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 Hit Points. The creature is friendly to you and your Companions, and it acts on Your Turn. You can use a Bonus Action to Command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to Attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its Nature. Once three fuzzy Objects have been pulled from the bag, the bag can't be used again until the next dawn.",
     "subrules":"Roll a d8: 1: Weasel. 2: Giant Rat. 3: Badger. 4: Boar. 5: Panther. 6: Giant Badger. 7: Dire Wolf. 8: Giant Elk.",
-    "type": "Adventuring Gear",
-    "subtype": "Wondrous item",
-    "source": "PHB154"
+    "type": "Wondrous item",
+    "source": "DMG154"
   },
   {
     "name": "Bag of Tricks, Rust",
@@ -197,9 +194,8 @@
     "description": "This ordinary bag, made from rust cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.",
     "rules": "You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 Hit Points. The creature is friendly to you and your Companions, and it acts on Your Turn. You can use a Bonus Action to Command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to Attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its Nature. Once three fuzzy Objects have been pulled from the bag, the bag can't be used again until the next dawn.",
     "subrules":"Roll a d8: 1: Rat. 2: Owl. 3: Mastiff. 4: Goat. 5: Giant Goat. 6: Giant Boar. 7: Lion. 8: Brown Bear.",
-    "type": "Adventuring Gear",
-    "subtype": "Wondrous item",
-    "source": "PHB154"
+    "type": "Wondrous item",
+    "source": "DMG154"
   },
   {
     "name": "Bag of Tricks, Tan",
@@ -208,39 +204,197 @@
     "description": "This ordinary bag, made from tan cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.",
     "rules": "You can use an action to pull the fuzzy object from the bag and throw it up to 20 feet. When the object lands, it transforms into a creature you determine by rolling a d8 and consulting the table that corresponds to the bag's color. The creature vanishes at the next dawn or when it is reduced to 0 Hit Points. The creature is friendly to you and your Companions, and it acts on Your Turn. You can use a Bonus Action to Command how the creature moves and what action it takes on its next turn, or to give it general orders, such as to Attack your enemies. In the absence of such orders, the creature acts in a fashion appropriate to its Nature. Once three fuzzy Objects have been pulled from the bag, the bag can't be used again until the next dawn.",
     "subrules":"Roll a d8: 1: Jackal. 2: Ape. 3: Baboon. 4: Axe Beak. 5: Black Bear. 6: Giant Weasel. 7: Giant Hyena. 8: Tiger.",
-    "type": "Adventuring Gear",
-    "subtype": "Wondrous item",
-    "source": "PHB154"
+    "type": "Wondrous Item",
+    "source": "DMG154"
+  },
+  {
+    "name": "Bead of Force",
+    "rarity": 2,
+    "image": "beadofforce.png",
+    "description": "This small black Sphere measures 3/4 of an inch in diameter and weighs an ounce. Typically, 1d4 + 4 beads of force are found together.",
+    "rules": "You can use an action to throw the bead up to 60 feet. The bead explodes on impact and is destroyed. Each creature within a 10-foot radius of where the bead landed must succeed on a DC 15 Dexterity saving throw or take 5d4 force damage. A Sphere of transparent force then encloses the area for 1 minute. Any creature that failed the save and is completely within the area is trapped inside this Sphere. Creatures that succeeded on the save, or are partially within the area, are pushed away from the center of the Sphere until they are no longer inside it. Only breathable air can pass through the sphere's wall. No Attack or other Effect can.",
+    "subrules":"An enclosed creature can use its action to push against the sphere's wall, moving the Sphere up to half the creature's walking speed. The Sphere can be picked up, and its magic causes it to weigh only 1 pound, regardless of the weight of Creatures inside.",
+    "type": "Wondrous item",
+    "source": "DMG154"
+  },
+  {
+    "name": "Belt of Dwarvenkind",
+    "rarity": 2,
+    "image": "beltofdwarvenkind.png",
+    "description": "A strong leather and metal belt, inlaid with the releif of a grim Dwarven figure.",
+    "rules": "While wearing this belt, you gain the following benefits:    • Your Constitution score increases by 2, to a maximum of 20.  • You have advantage on Charisma (Persuasion) checks made to interact with Dwarves.    In addition, while attuned to the belt, you have a 50 percent chance each day at dawn of growing a full beard if you're capable of growing one, or a visibly thicker beard if you already have one.",
+    "subrules": "If you aren't a dwarf, you gain the following additional benefits while wearing the belt: You have advantage on Saving Throws against poison, and you have Resistance against poison damage.    • You have Darkvision out to a range of 60 feet.    • You can speak, read, and write Dwarvish.",
+    "type": "Wondrous item",
+    "slot": "belt",
+    "attunement": true,
+    "source": "DMG155"
+  },
+  {
+    "name": "Belt of Hill Giant Strength",
+    "rarity": 2,
+    "image": "beltofgiantstrength.png",
+    "description": "A strong leather and metal belt, inlaid with the releif of a grim giant figure.",
+    "rules": "While wearing this belt, your Strength score changes to 21. The item has no effect on you if your Strength without the belt is equal to or greater than the belt’s score.",
+    "type": "Wondrous item",
+    "slot": "belt",
+    "attunement": true,
+    "source": "DMG155"
+  },
+  {
+    "name": "Belt of Stone Giant Strength",
+    "rarity": 3,
+    "image": "beltofgiantstrength.png",
+    "description": "A strong leather and metal belt, inlaid with the releif of a grim giant figure.",
+    "rules": "While wearing this belt, your Strength score changes to 23. The item has no effect on you if your Strength without the belt is equal to or greater than the belt’s score.",
+    "type": "Wondrous item",
+    "slot": "belt",
+    "attunement": true,
+    "source": "DMG155"
+  },
+  {
+    "name": "Belt of Frost Giant Strength",
+    "rarity": 3,
+    "image": "beltofgiantstrength2.png",
+    "description": "A strong leather and metal belt, inlaid with the releif of a grim giant figure.",
+    "rules": "While wearing this belt, your Strength score changes to 23. The item has no effect on you if your Strength without the belt is equal to or greater than the belt’s score.",
+    "type": "Wondrous item",
+    "slot": "belt",
+    "attunement": true,
+    "source": "DMG155"
+  },
+  {
+    "name": "Belt of Fire Giant Strength",
+    "rarity": 3,
+    "image": "beltofgiantstrength2.png",
+    "description": "A strong leather and metal belt, inlaid with the releif of a grim giant figure.",
+    "rules": "While wearing this belt, your Strength score changes to 25. The item has no effect on you if your Strength without the belt is equal to or greater than the belt’s score.",
+    "type": "Wondrous item",
+    "slot": "belt",
+    "attunement": true,
+    "source": "DMG155"
+  },
+  {
+    "name": "Belt of Cloud Giant Strength",
+    "rarity": 4,
+    "image": "beltofgiantstrength2.png",
+    "description": "A strong leather and metal belt, inlaid with the releif of a grim giant figure.",
+    "rules": "While wearing this belt, your Strength score changes to 27. The item has no effect on you if your Strength without the belt is equal to or greater than the belt’s score.",
+    "type": "Wondrous item",
+    "slot": "belt",
+    "attunement": true,
+    "source": "DMG155"
+  },
+  {
+    "name": "Belt of Storm Giant Strength",
+    "rarity": 4,
+    "image": "beltofgiantstrength2.png",
+    "description": "A strong leather and metal belt, inlaid with the releif of a grim giant figure.",
+    "rules": "While wearing this belt, your Strength score changes to 29. The item has no effect on you if your Strength without the belt is equal to or greater than the belt’s score.",
+    "type": "Wondrous item",
+    "slot": "belt",
+    "attunement": true,
+    "source": "DMG155"
+  },
+  {
+    "name": "Berserker Axe",
+    "rarity": 2,
+    "image": "berserkeraxe.png",
+    "description": "This finely made set of armor is masterful.",
+    "rules": "You gain a +1 bonus to Attack and Damage Rolls made with this Magic Weapon. In addition, while you are attuned to this weapon, your Hit Points maximum increases by 1 for each level you have attained.",
+    "subrules": "Curse. This axe is Cursed, and becoming attuned to it extends the curse to you. As long as you remain Cursed, you are unwilling to part with the axe, keeping it within reach at all times. You also have disadvantage on Attack rolls with Weapons other than this one, unless no foe is within 60 feet of you that you can see or hear. Whenever a Hostile creature damages you while the axe is in your possession, you must succeed on a DC 15 Wisdom saving throw or go berserk. While berserk, you must use your action each round to Attack the creature nearest to you with the axe. If you can make extra attacks as part of the Attack action, you use those extra attacks, moving to Attack the next nearest creature after you fell your current target. If you have multiple possible Targets, you Attack one at random. You are berserk until you start Your Turn with no Creatures within 60 feet of you that you can see or hear.",
+    "attunement": true,
+    "type": "Weapon",
+    "subtype": "any axe",
+    "slot": "weapon",
+    "source": "DMG155"
+  },
+  {
+    "name": "Boots of Elvenkind",
+    "rarity": 1,
+    "image": "bootsofelvenkind.png",
+    "description": "This finely made set of elven boots is hued as the forest, and seem soft and supple.",
+    "rules": "While you wear these boots, your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently.",
+    "type": "Wondrous item",
+    "slot": "feet",
+    "source": "DMG155"
+  },
+  {
+    "name": "Boots of Levitation",
+    "rarity": 2,
+    "image": "bootsoflevitation.png",
+    "description": "These boots are heeled with a curious arcane device, and seems sturdy enough to support your weight.",
+    "rules": "While you wear these boots, you can use an action to cast the Levitate spell on yourself at will.",
+    "attunement": true,
+    "type": "Wondrous item",
+    "slot": "feet",
+    "source": "DMG155"
+  },
+  {
+    "name": "Boots of Speed",
+    "rarity": 2,
+    "image": "bootsofspeed.png",
+    "description": "These boots are cinchecd and tight, and spring lightly to the touch.",
+    "rules": "While you wear these boots, you can use a Bonus Action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity Attack against you has disadvantage on the Attack roll. If you click your heels together again, you end the Effect.",
+    "subrules": "When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a Long Rest.",
+    "attunement": true,
+    "type": "Wondrous item",
+    "slot": "feet",
+    "source": "DMG155"
+  },
+  {
+    "name": "Boots of Striding and Sprinting",
+    "rarity": 1,
+    "image": "bootsofstridingandsprinting.png",
+    "description": "These boots are spring heele'd, and belted for heavy loads.",
+    "rules": "While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow.",
+    "attunement": true,
+    "type": "Wondrous item",
+    "slot": "feet",
+    "source": "DMG156"
+  },
+  {
+    "name": "Boots of the Winterlands",
+    "rarity": 1,
+    "image": "bootsofthewinterlands.png",
+    "description": "These furred boots are snug and feel quite warm.",
+    "rules": "While you wear them, you gain the following benefits: You have resistance to cold damage. You ignore difficult terrain created by ice or snow. You can tolerate temperatures as low as −50 degrees Fahrenheit without any additional protection. If you wear heavy clothes, you can tolerate temperatures as low as −100 degrees Fahrenheit.",
+    "attunement": true,
+    "type": "Wondrous item",
+    "slot": "feet",
+    "source": "DMG156"
   },
   {
     "name": "Armor, +1",
     "rarity": 2,
-    "image": "armor.png",
+    "image": "genarmor.png",
     "description": "This finely made set of armor is masterful.",
     "rules": "You have a +1 bonus to AC while wearing this armor.",
     "type": "Armor",
     "subtype": "light, medium, or heavy",
-    "source": "PHB152"
+    "slot": "armor",
+    "source": "DMG152"
   },
   {
     "name": "Armor, +2",
     "rarity": 3,
-    "image": "armor.png",
+    "image": "genarmor.png",
     "description": "This finely made set of armor is masterful.",
     "rules": "You have a +2 bonus to AC while wearing this armor.",
     "type": "Armor",
+    "slot": "armor",
     "subtype": "light, medium, or heavy",
-    "source": "PHB152"
+    "source": "DMG152"
   },
   {
     "name": "Armor, +3",
     "rarity": 4,
-    "image": "armor.png",
+    "image": "genarmor.png",
     "description": "This finely made set of armor is masterful.",
     "rules": "You have a +3 bonus to AC while wearing this armor.",
     "type": "Armor",
+    "slot": "armor",
     "subtype": "light, medium, or heavy",
-    "source": "PHB152"
+    "source": "DMG152"
   },
   {
     "name": "Potion of Healing",
@@ -248,10 +402,10 @@
     "image": "potionOfHealing.png",
     "description": "This potion’s red liquid glimmers when agitated.",
     "rules": "You regain 2d4+2 Hit Points when you drink this potion.",
-    "type": "adventuring gear",
+    "type": "Adventuring gear",
     "subtype": "potion",
     "consumable": true,
-    "source": "PHB187"
+    "source": "DMG187"
   },
   {
     "name": "Potion of Greater Healing",
@@ -259,10 +413,10 @@
     "image": "potionOfGreaterHealing.png",
     "description": "This potion’s red liquid glimmers when agitated.",
     "rules": "You regain 4d4+4 Hit Points when you drink this potion.",
-    "type": "adventuring gear",
+    "type": "Adventuring gear",
     "subtype": "potion",
     "consumable": true,
-    "source": "PHB187"
+    "source": "DMG187"
   },
   {
     "name": "Potion of Superior Healing",
@@ -270,10 +424,10 @@
     "image": "potionOfSuperiorHealing.png",
     "description": "This potion’s red liquid glimmers when agitated.",
     "rules": "You regain 8d4+8 Hit Points when you drink this potion.",
-    "type": "adventuring gear",
+    "type": "Adventuring gear",
     "subtype": "potion",
     "consumable": true,
-    "source": "PHB187"
+    "source": "DMG187"
   },
   {
     "name": "Potion of Supreme Healing",
@@ -281,10 +435,10 @@
     "image": "potionOfSupremeHealing.png",
     "description": "This potion’s red liquid glimmers when agitated.",
     "rules": "You regain 10d4+10 Hit Points when you drink this potion.",
-    "type": "adventuring gear",
+    "type": "Adventuring gear",
     "subtype": "potion",
     "consumable": true,
-    "source": "PHB187"
+    "source": "DMG187"
   },
   {
     "name": "Amulet of the Planes",
@@ -293,10 +447,9 @@
     "description": "Amulets of the planes were typically circular necklace pendants, fashioned from gray metal and black stone and inscribed with various symbols. On closer inspection, they resembled a swirling mass of dark color, and gave off a strong conjuration aura.",
     "rules": "While wearing this Amulet, you can use an action to name a Location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the Plane Shift spell. On a failure, you and each creature and object within 15 feet of you Travel to a random destination. Roll a d100. On a 1-60, you Travel to a random Location on the plane you named. On a 61-100, you Travel to a randomly determined plane of existence.",
     "attunement": true,
-    "type": "adventuring gear",
-    "subtype": "wondrous item",
+    "type": "Wondrous item",
     "slot": "neck",
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Adamantine Armor",
@@ -308,7 +461,7 @@
     "type": "armor",
     "subtype": "medium or heavy, but not hide",
     "slot": "armor",
-    "source": "PHB150"
+    "source": "DMG150"
   },
   {
     "name": "Demon Armor",
@@ -321,6 +474,6 @@
     "type": "armor",
     "subtype": "plate",
     "slot": "armor",
-    "source": "PHB165"
+    "source": "DMG165"
   }
 ]
