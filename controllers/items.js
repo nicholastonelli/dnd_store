@@ -3,13 +3,29 @@ const express = require("express")
 const router = express.Router()
 const Items = require("../models/items")
 
+// Function to shuffle
+
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--
+    ;[array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ]
+  }
+  return array
+}
+
 //middleware to require authorization
 
 const authRequired = (req, res, next) => {
   if (req.session.loggedIn) {
-      next()
+    next()
   } else {
-      res.redirect('/session/login')
+    res.redirect("/session/login")
   }
 }
 
@@ -30,8 +46,6 @@ const priceChart = [
   [100001, 1000000],
 ]
 
-
-
 router.get("/", (req, res) => {
   Items.find({}, (err, items) => {
     res.render("index", { items, rarityChart, priceChart })
@@ -48,12 +62,23 @@ router.get("/outfit", (req, res) => {
   res.render("outfit", { Items })
 })
 
-// Shop Form: This page has two select elements, one to get limit and rarity, one to get type 
-
+// Shop Form: This page has two select elements, one to get limit and rarity, one to get type
 
 router.post("/findshop/shop", (req, res) => {
-  let locale = (req.body.location)
-  console.log(locale)
+  console.log(req.body.type)
+  let inventory = req.body.type
+  let locale = req.body.location
+  let maxRarity = req.body.rarity
+  console.log(`locale is ${locale}`)
+  let rawInventory = []
+  Items.find({ type: inventory, rarity: { $lte: maxRarity} }, {}, {}, (err, items) => {
+    items.forEach((item) => rawInventory.push(item))
+    // This gets a limited number of items, THEN shuffles them. I need the opposite.
+    let mixedInventory = shuffle(rawInventory)
+    shopInventory = mixedInventory.splice(0, locale)
+    //console.log(`Item number 1 is ${shopInventory[0]}`)
+    res.render("shop", { items: shopInventory, rarityChart, priceChart })
+  })
 })
 
 router.get("/findshop", (req, res) => {
@@ -62,13 +87,11 @@ router.get("/findshop", (req, res) => {
 
 // Shop
 
-
-router.get("/findshop/shop", (req, res,) => {
+/* router.get("/findshop/shop", (req, res,) => {
   Items.find({ }, { }, { limit: req.body.location }, (err, items) => {
     res.render("shop", { items, rarityChart, priceChart })
   })
-})
-
+}) */
 
 //New Item
 
@@ -121,7 +144,7 @@ router.get("/:id/edit", authRequired, (req, res) => {
 
 // Delete Item
 
-router.delete("/:id",authRequired, (req, res) => {
+router.delete("/:id", authRequired, (req, res) => {
   Items.findByIdAndRemove(req.params.id, (err, deletedItem) => {
     res.redirect("/items")
   })

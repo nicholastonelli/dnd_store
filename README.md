@@ -68,12 +68,13 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 This is a Dungeons and Dragons 5e items database. Add homebrew, make items, generate stores.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ### Built With
 
-* [javascript, html, and css]
+* [Node, Express, EJS, express-ejs-layouts, MongoDB, Mongoose]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -100,7 +101,7 @@ Fork this repo or open <a href='https://nicholastonelli.github.io/dnd_store/'>he
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this project as a pastime with friends, to test your knowledge, or discover some rare triva about dugeons and dragons. Click on the bonfire to light things up.
+Use this project as a resource in your D&D5E games, or as a reference tool for items and statistics in the OGL, or to find Homebrew Items submitted by our users.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -110,9 +111,9 @@ Use this project as a pastime with friends, to test your knowledge, or discover 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [] Scroll Modal Animation
-- [] Radio Button Styling
-- [] Radio blank defaulting
+- [] Linking Users to submitted data
+- [] Matched 5e Styling
+- [] Outfitting Player Character form
 
 See the [open issues](https://github.com/nicholastonelli/dnd_store/issues) for a full list of proposed features (and known issues).
 
