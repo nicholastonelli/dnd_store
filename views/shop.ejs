@@ -25,7 +25,7 @@
     </td>
     <td><%= rarityChart[item.rarity] %></td>
     <td>
-      <%= priceChart[item.rarity][0]%> - <%=priceChart[item.rarity][1] %> gp
+      <%= priceChart[item.rarity][0]+ item.basePrice %> - <%= (priceChart[item.rarity][1]) + item.basePrice %> gp
     </td>
     <% if (item.consumable === true) { %>
     <td>
@@ -37,7 +37,7 @@
     <td>
       <%= Math.floor(Math.random() *
       (priceChart[item.rarity][1]-priceChart[item.rarity][0])) +
-      priceChart[item.rarity][0]%> gp
+      priceChart[item.rarity][0] + item.basePrice%> gp
     </td>
     <% } %>
     <td><i><%= item.description %></i></td>

@@ -65,21 +65,54 @@ router.get("/outfit", (req, res) => {
 // Shop Form: This page has two select elements, one to get limit and rarity, one to get type
 
 router.post("/findshop/shop", (req, res) => {
-  console.log(req.body.type)
+  // console.log(req.body.type)
   let inventory = req.body.type
   let locale = req.body.location
   let maxRarity = req.body.rarity
   console.log(`locale is ${locale}`)
+  console.log(`inventory is ${inventory}`)
   let rawInventory = []
-  Items.find({ type: inventory, rarity: { $lte: maxRarity} }, {}, {}, (err, items) => {
-    items.forEach((item) => rawInventory.push(item))
-    // This gets a limited number of items, THEN shuffles them. I need the opposite.
-    let mixedInventory = shuffle(rawInventory)
-    shopInventory = mixedInventory.splice(0, locale)
-    //console.log(`Item number 1 is ${shopInventory[0]}`)
-    res.render("shop", { items: shopInventory, rarityChart, priceChart })
-  })
-})
+  if (inventory === "Trader") {
+    console.log('Hit Trader Route.')
+  Items.find(
+    {
+      $or: [
+        { type: "Scroll" },
+        { type: "Wondrous item" },
+        { type: "Weapon" },
+        { type: "Armor" },
+        { type: "Potion" },
+      ],
+      rarity: { $lte: maxRarity },
+    },
+    {},
+    {},
+    (err, items) => {
+      items.forEach((item) => rawInventory.push(item))
+      // This gets a limited number of items, THEN shuffles them. I need the opposite.
+      let mixedInventory = shuffle(rawInventory)
+      shopInventory = mixedInventory.splice(0, locale)
+      //console.log(`Item number 1 is ${shopInventory[0]}`)
+      res.render("shop", { items: shopInventory, rarityChart, priceChart })
+    }
+  )
+} else {
+  console.log('Hit else Route.')
+  Items.find(
+    { type: inventory,
+      rarity: { $lte: maxRarity },
+    },
+    {},
+    {},
+    (err, items) => {
+      items.forEach((item) => rawInventory.push(item))
+      // This gets a limited number of items, THEN shuffles them. I need the opposite.
+      let mixedInventory = shuffle(rawInventory)
+      shopInventory = mixedInventory.splice(0, locale)
+      console.log(`Item number 1 is ${shopInventory[0]}`)
+      res.render("shop", { items: shopInventory, rarityChart, priceChart })
+})}})
+
 
 router.get("/findshop", (req, res) => {
   res.render("findshop", { Items: Items })
@@ -87,11 +120,25 @@ router.get("/findshop", (req, res) => {
 
 // Shop
 
-/* router.get("/findshop/shop", (req, res,) => {
-  Items.find({ }, { }, { limit: req.body.location }, (err, items) => {
-    res.render("shop", { items, rarityChart, priceChart })
-  })
-}) */
+router.get("/findshop/fullshop", (req, res) => {
+  Items.find(
+    {
+      $or: [
+        { type: "Scroll" },
+        { type: "Wondrous item" },
+        { type: "Weapon" },
+        { type: "Armor" },
+        { type: "Potion" },
+      ],
+      rarity: { $lte: 2 },
+    },
+    {},
+    {},
+    (err, items) => {
+      res.render("shop", { items, rarityChart, priceChart })
+    }
+  )
+})
 
 //New Item
 

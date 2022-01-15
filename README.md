@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/nicholastonelli/dnd_store">
-    <img src="images/sand1.png" alt="Logo" width="80" height="80">
+    <img src="public/images/sand1.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Dnd_Store</h3>
@@ -170,7 +170,7 @@ Project Link: [https://github.com/nicholastonelli/dnd_store](https://github.com/
 <!-- WIREFRAMES -->
 ## Wireframes
 
-<img src="images/wireframes.jpeg" alt="wireframes">
+<img src="public/images/wireframes.jpeg" alt="wireframes">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -189,5 +189,5 @@ Project Link: [https://github.com/nicholastonelli/dnd_store](https://github.com/
 [license-url]: https://github.com/nicholastonelli/dnd_store/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/nicholas-tonelli-9b9000226/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: public/images/screenshot.png
 

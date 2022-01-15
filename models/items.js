@@ -12,6 +12,7 @@ const itemSchema = new mongoose.Schema({
   description: { type: String, required: true },
   rules: { type: String },
   subrules: { type: String },
+  basePrice: { type: Number, required: true, min: 0, default: 0},
   source: { type: String, required: true, default: "homebrew" },
   setting: { type: String, required: true, default: "universal" },
 })

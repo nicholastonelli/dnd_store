@@ -15,21 +15,22 @@
     <title>Item Shop</title>
   </head>
 
- 
-    <nav>
+ <h3>
+    <nav style="display: inline">
       <ul>
-        <li><a href="/items">Items Index</a></li>
-        <li><a href="/items/new">Create New Item</a></li>
-        <li><a href="/items/findshop">Shop</a></li>
-        <li><a href="/items/outfit">Outfit a Character</a></li>
+        <li style="display: inline"><a href="/items">Items Index</a></li>
+        <li style="display: inline"><a href="/items/new">Create New Item</a></li>
+        <li style="display: inline"><a href="/items/findshop">Shop</a></li>
+        <li style="display: inline"><a href="/items/outfit">Outfit a Character</a></li>
         <% if (!loggedIn) {%>
-        <li><a href="/session/register">Register</a></li>
-        <li><a href="/session/login">Login</a></li>
+        <li style="display: inline"><a href="/session/register">Register</a></li>
+        <li style="display: inline"><a href="/session/login">Login</a></li>
         <% } else { %>
-        <li><a href="/session/logout">Logout</a></li>
+        <li style="display: inline"><a href="/session/logout">Logout</a></li>
         <%}%>
       </ul>
     </nav>
+  </h3>
     <% if (username) { %>
     <p>Welcome <%=username %></p>
     <%}%> <% if (message) {%>

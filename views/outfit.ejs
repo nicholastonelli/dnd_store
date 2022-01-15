@@ -1,13 +1,17 @@
 <h1>Outfit a Character</h1>
 
-<p>Armor: </p>
-
-<p>Weapon: </p>
-
-<p>Head: </p>
-
-<p>Cloak: </p>
-
-<p>Boots: </p>
-
-<p>Adventuring Gear:</p>
+<form method=POST action="outfit/player">
+    <label for="">Rarity Limit</label>
+    <select class="rarity" id="rarity" name="rarity">
+        <option value="0">Common</option>
+        <option value="1">Uncommon</option>
+        <option value="2">Rare</option>
+        <option value="3">Very Rare</option>
+        <option value="4">Legendary</option>
+        <option value="5">Artifact</option>
+      </select>
+      <label for="itemCount">Item Count:</label>
+      <input type="number" name="itemCount" id="itemCount">
+      <label for="homebrew">Allow Homebrew?</label>
+      <input id="homebrew" name="homebrew" type="checkbox">
+</form>
