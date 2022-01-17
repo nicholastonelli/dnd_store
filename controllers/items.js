@@ -65,12 +65,9 @@ router.get("/outfit", (req, res) => {
 // Shop Form: This page has two select elements, one to get limit and rarity, one to get type
 
 router.post("/findshop/shop", (req, res) => {
-  // console.log(req.body.type)
   let inventory = req.body.type
   let locale = req.body.location
   let maxRarity = req.body.rarity
-  console.log(`locale is ${locale}`)
-  console.log(`inventory is ${inventory}`)
   let rawInventory = []
   if (inventory === "Trader") {
     console.log('Hit Trader Route.')
@@ -97,7 +94,6 @@ router.post("/findshop/shop", (req, res) => {
     }
   )
 } else {
-  console.log('Hit else Route.')
   Items.find(
     { type: inventory,
       rarity: { $lte: maxRarity },
@@ -106,10 +102,8 @@ router.post("/findshop/shop", (req, res) => {
     {},
     (err, items) => {
       items.forEach((item) => rawInventory.push(item))
-      // This gets a limited number of items, THEN shuffles them. I need the opposite.
       let mixedInventory = shuffle(rawInventory)
       shopInventory = mixedInventory.splice(0, locale)
-      console.log(`Item number 1 is ${shopInventory[0]}`)
       res.render("shop", { items: shopInventory, rarityChart, priceChart })
 })}})
 

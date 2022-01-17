@@ -2,7 +2,13 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 
-const MONGODB_URI = process.env.MONGODB_URI
+const MONGODB_URI =
+//check if the node environment is production
+process.env.NODE_ENV === "production"
+  ? //if so, use DB_URL as the database location
+    process.env.DB_URL
+  : //if not, use the fruits-app db on the MongoDB's local server
+    "mongodb://localhost:27017/items_shop";
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,

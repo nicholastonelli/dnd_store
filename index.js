@@ -2,7 +2,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 const express = require('express')
 const app = express()
-const PORT = process.env.PORT
+const PORT = (process.env.PORT || 2000)
 const SESSION_SECRET = process.env.SESSION_SECRET
 const methodOverride = require('method-override')
 const expressEjsLayout = require('express-ejs-layouts')
