@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(expressEjsLayout)
 app.set('view engine', 'ejs')
 app.use(session({
-    secret: app.get('secret'),
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
 
