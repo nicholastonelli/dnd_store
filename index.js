@@ -22,7 +22,7 @@ app.set('view engine', 'ejs')
 
 
 app.use(session({
-    secret: app.get('secret'),
+    secret: 'secretIdHere',
     resave: false,
     saveUninitialized: false,
 
