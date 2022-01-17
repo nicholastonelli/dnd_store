@@ -160,10 +160,8 @@ Project Link: [https://github.com/nicholastonelli/dnd_store](https://github.com/
 <!-- USER STORIES -->
 ## User Stories
 
-* As a user, I should be able to assemble my pool of questions from categories
-* As a user, I should be able to reset the game after finishing all questions.
-* As a user, I should be given a score based on my performance.
-* As a user, I should be able to answer questions with a range of options. 
+* As a user, I should be able to create new magic items, and add homebrew items to the database.
+* As a user, I should be able to generate a magic item store based on several parameters, such as maximum rarity, item type, and shop size. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

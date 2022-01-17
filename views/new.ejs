@@ -1,30 +1,53 @@
 <h1>Make a new Item.</h1>
 <form action="/items" method="POST">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name"/>
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" />
 
-    <label for="rarity">Rarity</label>
-    <input type="number" name="rarity" id="rarity" />
+  <label for="rarity">Rarity</label>
+  <select id="rarity" name="rarity">
+    <option value="0">Common</option>
+    <option value="1">Uncommon</option>
+    <option value="2">Rare</option>
+    <option value="3">Very Rare</option>
+    <option value="4">Legendary</option>
+    <option value="5">Artifact</option>
+  </select>
 
-    <label for="attunement">Requires Attunement?</label>
-    <input type="checkbox" name="attunement" id="attunement" />
+  <label for="attunement">Requires Attunement?</label>
+  <input type="checkbox" name="attunement" id="attunement" />
 
-    <label for="type">Type:</label>
-    <input type="text" name="type" id="type" />
+  <label for="type">Type</label>
+  <select name="type" id="type">
+    <option value='Weapon'>Weapon</option>
+    <option value="Armor">Armor</option>
+    <option value="Wondrous item">Wondrous item</option>
+    <option value="Potion">Potion</option>
+    <option value="Scroll">Scroll</option>
+  </select>
 
-    <label for="subtype">Subtype:</label>
-    <input type="text" name="subtype" id="subtype" />
+  <label for="subtype">Subtype:</label>
+  <input type="text" name="subtype" id="subtype" />
 
-    <label for="description">Description</label>
-    <input type="text" name="description" id="description" />
+  <label for="description">Description</label>
+  <input type="text" name="description" id="description" />
 
-    <label for="rules">Rules</label>
-    <input type="text" name="rules" id="rules" />
+  <label for="rules">Rules</label>
+  <input type="text" name="rules" id="rules" />
 
-    <label for="setting">Setting</label>
-    <input type="text" name="setting" id="setting" />
+  <label for="subrules">Subrules</label>
+  <input type="text" name="subrules" id="subrules"/>
 
-    <input type="submit" value="Create Item">
-  </form>
+  <label for="slot">Slot</label>
+  <input type="text" name="slot" id="slot" />
 
-  
+  <label for="setting">Setting</label>
+  <input type="text" name="setting" id="setting" />
+
+  <label for="basePrice">Base Cost</label>
+  <input type="number" name="basePrice" id="basePrice" />
+
+  <label for="source">Source</label>
+  <input type="text" name="source" id="source" />
+
+  <input type="submit" value="Create Item" />
+</form>

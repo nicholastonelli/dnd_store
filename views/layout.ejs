@@ -15,25 +15,24 @@
     <title>Item Shop</title>
   </head>
 
- <h3>
-    <nav style="display: inline">
+ 
+    <nav style="display: flex; flex-direction: row;">
       <ul>
-        <li style="display: inline"><a href="/items">Items Index</a></li>
-        <li style="display: inline"><a href="/items/new">Create New Item</a></li>
-        <li style="display: inline"><a href="/items/findshop">Shop</a></li>
-        <li style="display: inline"><a href="/items/outfit">Outfit a Character</a></li>
+        <li style="justify-content: flex-start"><a href="/items">Items Index</a></li>
+        <li style="justify-content: flex-start"><a href="/items/new">Create New Item</a></li>
+        <li style="justify-content: flex-start"><a href="/items/findshop">Shop</a></li>
+        <li style="justify-content: flex-start"><a href="/items/outfit">Outfit a Character</a></li>
         <% if (!loggedIn) {%>
-        <li style="display: inline"><a href="/session/register">Register</a></li>
-        <li style="display: inline"><a href="/session/login">Login</a></li>
+        <li style="justify-content: flex-start"><a href="/session/register">Register</a></li>
+        <li style="justify-content: flex-start"><a href="/session/login">Login</a></li>
         <% } else { %>
-        <li style="display: inline"><a href="/session/logout">Logout</a></li>
+        <li style="justify-content: flex-end;">Welcome, <%=username %></a></li>
+        <li style="justify-content: flex-end;"><a href="/session/logout">Logout</a></li>
         <%}%>
       </ul>
     </nav>
-  </h3>
-    <% if (username) { %>
-    <p>Welcome <%=username %></p>
-    <%}%> <% if (message) {%>
+  
+<% if (message) {%>
     <p><%= message %></p>
     <% } %> <%- body %>
     <p>Footer copywrite 2022</p>

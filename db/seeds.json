@@ -68,7 +68,7 @@
     "name": "Animated Shield",
     "rarity": 3,
     "image": "animatedshield.png",
-    "description": "This enchanted shield is fienly made and decorated.",
+    "description": "This enchanted shield is finely made and decorated.",
     "rules": "While holding this Shield, you can speak its Command word as a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The Shield remains animated for 1 minute, until you use a Bonus Action to end this Effect, or until you are Incapacitated or die, at which point the Shield falls to the ground or into your hand if you have one free.",
     "attunement": true,
     "type": "shield",
@@ -80,7 +80,7 @@
     "name": "Apparatus of Kwalish",
     "rarity": 4,
     "image": "apparatusofkwalish.png",
-    "description": "This enchanted shield is fienly made and decorated.",
+    "description": "This iron barrel resembles a lobster.",
     "rules": "This item first appears to be a Large sealed iron barrel weighing 500 pounds. The barrel has a hidden catch, which can be found with a successful DC 20 Intelligence (Investigation) check. Releasing the catch unlocks a hatch at one end of the barrel, allowing two Medium or smaller creatures to crawl inside. Ten levers are set in a row at the far end. each in a neutral position, able to move either up or down. When certain levers are used, the apparatus transforms to resemble a giant lobster.",
     "subrules": "The apparatus of Kwalish is a Large object with the following statistics...",
     "type": "Wondrous item",
@@ -95,6 +95,7 @@
     "type": "Armor",
     "subtype": "plate",
     "attunement": true,
+    "basePrice": 1500,
     "source": "DMG153"
   },
   {

@@ -5,13 +5,32 @@
   <input type="text" name="name" id="name" value="<%= item.name%>" />
 
   <label for="rarity">Rarity</label>
-  <input type="number" name="rarity" id="rarity" value="<%= item.rarity%>" />
+  <select id="rarity" name="rarity">
+    <option value="0">Common</option>
+    <option value="1">Uncommon</option>
+    <option value="2">Rare</option>
+    <option value="3">Very Rare</option>
+    <option value="4">Legendary</option>
+    <option value="5">Artifact</option>
+  </select>
+
+  <label for="attunement">Requires Attunement?</label>
+    <input type="checkbox" name="attunement" id="attunement" />
 
   <label for="type">Type</label>
-  <input type="text" name="type" id="type" value="<%= item.type%>" />
+  <select name="type" id="type" value="<%= item.type%>">
+    <option value='Weapon'>Weapon</option>
+    <option value="Armor">Armor</option>
+    <option value="Wondrous item">Wondrous item</option>
+    <option value="Potion">Potion</option>
+    <option value="Scroll">Scroll</option>
+  </select>
 
   <label for="subtype">Subtype</label>
   <input type="text" name="subtype" id="subtype" value="<%= item.subtype%>" />
+
+  <label for="slot">Slot</label>
+  <input type="text" name="slot" id="slot" value="<%= item.slot%>"/>
 
   <label for="description">Description</label>
   <input
@@ -23,6 +42,12 @@
 
   <label for="rules">Rules</label>
   <input type="text" name="rules" id="rules" value="<%= item.rules%>" />
+
+  <label for="subrules">Subrules</label>
+  <input type="text" name="subrules" id="subrules" value="<%= item.subrules%>" />
+
+  <label for="basePrice">Base Cost</label>
+  <input type="number" name="basePrice" id="basePrice" value="<%= item.basePrice%>"/>
 
   <label for="source">Source</label>
   <input type="text" name="source" id="source" value="<%= item.source%>" />
