@@ -148,6 +148,11 @@ router.post("/", authRequired, (req, res) => {
   } else {
     req.body.attunement = false
   }
+  if (req.body.consumable === "on") {
+    req.body.consumable = true
+  } else {
+    req.body.consumable = false
+  }
 
   Items.create(req.body, (error, createdItem) => {
     res.redirect("/items")
@@ -169,6 +174,11 @@ router.put("/:id", authRequired, (req, res) => {
     req.body.attunement = true
   } else {
     req.body.attunement = false
+  }
+  if (req.body.consumable === "on") {
+    req.body.consumable = true
+  } else {
+    req.body.consumable = false
   }
   Items.findByIdAndUpdate(
     req.params.id,

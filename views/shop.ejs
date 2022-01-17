@@ -1,8 +1,27 @@
 <h1>This is your Shop</h1>
 
-<img src="/images/storefront.png" alt="A picture of a fantasy storefront" style="max-width:700px;display:block; margin-left: auto;margin-right: auto;"/>
+<img
+  src="/images/storefront.png"
+  alt="A picture of a fantasy storefront"
+  style="
+    max-width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  "
+/>
 
 <table>
+  <tr>
+    <td><b>Name</b></td>
+    <td><b>Image</b></td>
+    <td><b>Rarity</b></td>
+    <td><b>Price Range</b></td>
+    <td><b>Suggested Price</b></td>
+    <td><b>Description</b></td>
+    <td><b>Rules</b></td>
+    <td><b>Type (Subtype)</b></td>
+  </tr>
   <% items.forEach((item, index)=>{ %>
   <tr>
     <td><b><%= item.name %></b></td>
@@ -25,7 +44,8 @@
     </td>
     <td><%= rarityChart[item.rarity] %></td>
     <td>
-      <%= priceChart[item.rarity][0]+ item.basePrice %> - <%= (priceChart[item.rarity][1]) + item.basePrice %> gp
+      <%= priceChart[item.rarity][0]+ item.basePrice %> - <%=
+      (priceChart[item.rarity][1]) + item.basePrice %> gp
     </td>
     <% if (item.consumable === true) { %>
     <td>
@@ -42,7 +62,11 @@
     <% } %>
     <td><i><%= item.description %></i></td>
     <td><%= item.rules %></td>
-    <td><i><%= item.type %> <% if (item.subtype) {%>(<%= item.subtype%>)<% } %></i></td>
+    <td>
+      <i
+        ><%= item.type %> <% if (item.subtype) {%>(<%= item.subtype%>)<% } %></i
+      >
+    </td>
   </tr>
   <% }) %>
 </table>

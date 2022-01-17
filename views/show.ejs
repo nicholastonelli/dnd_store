@@ -1,9 +1,12 @@
-<img src="/images/<%= item.image %>" alt=" <%= item.description %>"" style=max-width:500px; />
+<img src="/images/<%= item.image %>" alt=" <%= item.description %>""
+style=max-width:500px; />
 
 <p><%= item.name %></p>
 <p><%= rarityChart[item.rarity] %></p>
 <% if (item.attunement === true) {%>
 <p><i>Requires Attunement</i></p>
+<% } %> <% if (item.consumable === true) {%>
+<p><i>Consumable</i></p>
 <% } %>
 <p><%= item.type %> <% if (item.subtype) {%>(<%= item.subtype%>)<% } %></p>
 <p><%= item.description %></p>
@@ -12,5 +15,5 @@
 <p><%= item.slot %></p>
 <p><%= item.source %></p>
 <p><%= item.setting %></p>
-
-<a href="/items">Back</a>
+<p><a href="/items/<%= item.id %>/edit">edit me</a></p>
+<p><a href="/items">Back</a></p>

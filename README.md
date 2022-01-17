@@ -111,9 +111,14 @@ Use this project as a resource in your D&D5E games, or as a reference tool for i
 <!-- ROADMAP -->
 ## Roadmap
 
+- [] Add scroll feature to table displays
+- [] Add pagination to large displays
+- [] Personalized Art
 - [] Linking Users to submitted data
 - [] Matched 5e Styling
 - [] Outfitting Player Character form
+- [] Full SRD seed data
+- [] Sort to exclude homebrew
 
 See the [open issues](https://github.com/nicholastonelli/dnd_store/issues) for a full list of proposed features (and known issues).
 
@@ -162,6 +167,8 @@ Project Link: [https://github.com/nicholastonelli/dnd_store](https://github.com/
 
 * As a user, I should be able to create new magic items, and add homebrew items to the database.
 * As a user, I should be able to generate a magic item store based on several parameters, such as maximum rarity, item type, and shop size. 
+* As a user, I should be able to update item statistics.
+* As a user, I should see suggested price ranges, as well as helpful tools to save time during games. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

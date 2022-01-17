@@ -1123,7 +1123,7 @@
     "rarity": 3,
     "image": "potionOfSupremeHealing.png",
     "description": "This potion’s red liquid glimmers when agitated.",
-    "rules": ".",
+    "rules": "You regain 10d4+10 Hit Points when you drink this potion..",
     "type": "Potion",
     "consumable": true,
     "source": "DMG187"
