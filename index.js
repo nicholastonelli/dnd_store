@@ -19,8 +19,10 @@ app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended:false}));
 app.use(expressEjsLayout)
 app.set('view engine', 'ejs')
+
+
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: app.get('secret'),
     resave: false,
     saveUninitialized: false,
 
