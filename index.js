@@ -2,8 +2,10 @@ const dotenv = require('dotenv')
 dotenv.config()
 const express = require('express')
 const app = express()
-const PORT = (process.env.PORT || 2000)
-const SESSION_SECRET = process.env.SESSION_SECRET
+// const PORT = (process.env.PORT || 2000)
+app.set('port', process.env.PORT || 2000)
+// const SESSION_SECRET = process.env.SESSION_SECRET
+app.set('secret', process.env.SESSION_SECRET)
 const methodOverride = require('method-override')
 const expressEjsLayout = require('express-ejs-layouts')
 const itemsController = require('./controllers/items')
@@ -18,7 +20,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(expressEjsLayout)
 app.set('view engine', 'ejs')
 app.use(session({
-    secret: SESSION_SECRET,
+    secret: app.get('secret'),
     resave: false,
     saveUninitialized: false,
 
@@ -70,6 +72,6 @@ app.get('/getSessionInfo', (req,res)=>{
     res.send(req.session.data)
 })
 
-app.listen(PORT, ()=> console.log(`We're listening on port ${PORT}`))
+app.listen(app.get('port'), ()=> console.log(`We're listening on port ${app.get('port')}`))
 
 
