@@ -37,14 +37,14 @@ router.post("/register", async (req, res, next) => {
         req.session.loggedIn = true
         res.redirect('/items')
       }
-      console.log(req.body)
-      res.send("check your terminal")
+      //console.log(req.body)
+      //res.send("check your terminal")
     } else {
       req.session.message = "passwords must match"
       res.redirect('/session/register')
     }
-    console.log(req.body)
-    res.send("Check your terminal")
+    //console.log(req.body)
+    //res.send("Check your terminal")
   } catch (err) {
     next(err)
   }
